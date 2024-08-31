@@ -10,5 +10,7 @@ public class BudgetManager {
         while (sc.hasNextLine()) {
             list.append(sc.nextLine()).append("\n");
         }
+
+        System.out.println(list);
     }
 }
