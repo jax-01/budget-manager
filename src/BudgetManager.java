@@ -19,5 +19,6 @@ public class BudgetManager {
         }
 
         System.out.println(list);
+        System.out.printf("Total: $%.2f", total);
     }
 }
