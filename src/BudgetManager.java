@@ -11,6 +11,8 @@ public class BudgetManager {
             list.append(sc.nextLine()).append("\n");
         }
 
+        String[] listArray = list.toString().split("\n");
+
         System.out.println(list);
     }
 }
