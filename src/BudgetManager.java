@@ -14,6 +14,10 @@ public class BudgetManager {
 
         String[] listArray = list.toString().split("\n");
 
+        for (int i = 0; i < listArray.length; i++) {
+            total = total + Float.parseFloat(listArray[i].substring(listArray[i].lastIndexOf("$") + 1, listArray[i].lastIndexOf("\n")));
+        }
+
         System.out.println(list);
     }
 }
