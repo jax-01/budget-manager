@@ -47,6 +47,8 @@ public class BudgetManager {
         StringBuilder item = new StringBuilder();
         System.out.println("\nEnter purchase name:");
         item.append(sc.nextLine());
+        System.out.println("Enter its price:");
+        item.append(" $").append(sc.nextLine());
     }
 
     public static void displayBalance() {
