@@ -31,4 +31,8 @@ public class BudgetManager {
         System.out.println("3.) Show list of purchases");
         System.out.println("4.) Balance\n0.) Exit");
     }
+
+    public static void addIncome() {
+
+    }
 }
