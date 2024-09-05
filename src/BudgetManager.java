@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class BudgetManager {
-    private static int balance = 0;
+    private static float balance = 0;
     private static ArrayList<String> items = new ArrayList<String>();
 
     public static void main(String[] args) {
