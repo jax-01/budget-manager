@@ -36,8 +36,10 @@ public class BudgetManager {
 
     public static void addIncome() {
         Scanner sc = new Scanner(System.in);
+
         System.out.println("\nEnter income:");
         int income = sc.nextInt();
+
         balance += income;
         System.out.println("Income was added!");
     }
@@ -45,10 +47,13 @@ public class BudgetManager {
     public static void addPurchase() {
         Scanner sc = new Scanner(System.in);
         StringBuilder item = new StringBuilder();
+
         System.out.println("\nEnter purchase name:");
         item.append(sc.nextLine());
+
         System.out.println("Enter its price:");
         item.append(" $").append(sc.nextLine());
+
         items.add(item.toString());
     }
 
