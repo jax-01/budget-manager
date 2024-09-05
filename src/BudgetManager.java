@@ -55,6 +55,7 @@ public class BudgetManager {
         item.append(" $").append(sc.nextLine());
 
         items.add(item.toString());
+        System.out.println("Purchase was added!");
     }
 
     public static void displayBalance() {
