@@ -63,6 +63,10 @@ public class BudgetManager {
             System.out.println("The purchase list is empty");
             return;
         }
+
+        for (String item : items) {
+            System.out.println(item);
+        }
     }
 
     public static void displayBalance() {
