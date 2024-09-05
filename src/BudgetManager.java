@@ -43,7 +43,10 @@ public class BudgetManager {
     }
 
     public static void addPurchase() {
-
+        Scanner sc = new Scanner(System.in);
+        StringBuilder item = new StringBuilder();
+        System.out.println("\nEnter purchase name:");
+        item.append(sc.nextLine());
     }
 
     public static void displayBalance() {
