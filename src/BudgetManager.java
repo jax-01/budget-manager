@@ -3,6 +3,8 @@ package src;
 import java.util.Scanner;
 
 public class BudgetManager {
+    private static int balance = 0;
+
     public static void main(String[] args) {
         displayMenu();
 //        Scanner sc = new Scanner(System.in);
