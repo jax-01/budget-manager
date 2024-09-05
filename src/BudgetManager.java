@@ -58,6 +58,10 @@ public class BudgetManager {
         System.out.println("Purchase was added!");
     }
 
+    public static void showList() {
+
+    }
+
     public static void displayBalance() {
         System.out.println("Balance: " + balance);
     }
