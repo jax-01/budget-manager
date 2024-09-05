@@ -70,6 +70,14 @@ public class BudgetManager {
         }
     }
 
+    private static float getTotalExpenses() {
+        for (String item : items) {
+            expenses += Float.parseFloat(item.substring(item.lastIndexOf("$") + 1));
+        }
+
+        return expenses;
+    }
+
     public static void displayBalance() {
         System.out.println("Balance: " + balance);
     }
