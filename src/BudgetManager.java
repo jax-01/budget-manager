@@ -9,10 +9,9 @@ public class BudgetManager {
     private static ArrayList<String> items = new ArrayList<String>();
 
     public static void main(String[] args) {
-        int action;
         do {
             displayMenu();
-            switch (action = new Scanner(System.in).nextInt()) {
+            switch (new Scanner(System.in).nextInt()) {
                 case 1:
                     addIncome();
                     break;
