@@ -36,5 +36,7 @@ public class BudgetManager {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter income:");
         int income = sc.nextInt();
+        balance += income;
+        System.out.println("Income was added!");
     }
 }
