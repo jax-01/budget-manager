@@ -9,7 +9,29 @@ public class BudgetManager {
     private static ArrayList<String> items = new ArrayList<String>();
 
     public static void main(String[] args) {
-        displayMenu();
+        int action;
+        do {
+            displayMenu();
+            switch (action = new Scanner(System.in).nextInt()) {
+                case 1:
+                    addIncome();
+                    break;
+                case 2:
+                    addPurchase();
+                    break;
+                case 3:
+                    showList();
+                    break;
+                case 4:
+                    displayBalance();
+                    break;
+                case 0:
+                    exit();
+                default:
+                    System.out.println("Invalid action");
+            }
+        } while (true);
+
 //        Scanner sc = new Scanner(System.in);
 //        StringBuilder list =  new StringBuilder();
 //        float total = 0f;
