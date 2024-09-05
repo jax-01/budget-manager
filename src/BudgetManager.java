@@ -68,6 +68,8 @@ public class BudgetManager {
         for (String item : items) {
             System.out.println(item);
         }
+
+        System.out.println("Total sum: $" + getTotalExpenses());
     }
 
     private static float getTotalExpenses() {
