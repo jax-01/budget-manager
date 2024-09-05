@@ -3,6 +3,8 @@ package src;
 import java.util.Scanner;
 
 public class BudgetManager {
+    private static int balance = 0;
+
     public static void main(String[] args) {
         displayMenu();
 //        Scanner sc = new Scanner(System.in);
@@ -28,5 +30,13 @@ public class BudgetManager {
         System.out.println("1.) Add income\n2.) Add purchase");
         System.out.println("3.) Show list of purchases");
         System.out.println("4.) Balance\n0.) Exit");
+    }
+
+    public static void addIncome() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("\nEnter income:");
+        int income = sc.nextInt();
+        balance += income;
+        System.out.println("Income was added!");
     }
 }
