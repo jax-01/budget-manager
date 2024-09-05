@@ -83,4 +83,8 @@ public class BudgetManager {
     public static void displayBalance() {
         System.out.println("Balance: " + balance);
     }
+
+    public static void exit() {
+        System.exit(0);
+    }
 }
