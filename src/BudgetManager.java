@@ -95,6 +95,7 @@ public class BudgetManager {
     }
 
     private static float getTotalExpenses() {
+        expenses = 0;
         for (String item : items) {
             expenses += Float.parseFloat(item.substring(item.lastIndexOf("$") + 1));
         }
