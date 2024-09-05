@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class BudgetManager {
     private static float balance = 0;
+    private static float expenses = 0;
     private static ArrayList<String> items = new ArrayList<String>();
 
     public static void main(String[] args) {
