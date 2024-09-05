@@ -1,9 +1,11 @@
 package src;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class BudgetManager {
-    private static int balance = 0;
+    private static float balance = 0;
+    private static ArrayList<String> items = new ArrayList<String>();
 
     public static void main(String[] args) {
         displayMenu();
@@ -34,10 +36,26 @@ public class BudgetManager {
 
     public static void addIncome() {
         Scanner sc = new Scanner(System.in);
+
         System.out.println("\nEnter income:");
         int income = sc.nextInt();
+
         balance += income;
         System.out.println("Income was added!");
+    }
+
+    public static void addPurchase() {
+        Scanner sc = new Scanner(System.in);
+        StringBuilder item = new StringBuilder();
+
+        System.out.println("\nEnter purchase name:");
+        item.append(sc.nextLine());
+
+        System.out.println("Enter its price:");
+        item.append(" $").append(sc.nextLine());
+
+        items.add(item.toString());
+        System.out.println("Purchase was added!");
     }
 
     public static void displayBalance() {
