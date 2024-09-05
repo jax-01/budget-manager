@@ -39,4 +39,8 @@ public class BudgetManager {
         balance += income;
         System.out.println("Income was added!");
     }
+
+    public static void displayBalance() {
+        System.out.println("Balance: " + balance);
+    }
 }
