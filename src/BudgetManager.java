@@ -59,7 +59,9 @@ public class BudgetManager {
     }
 
     public static void showList() {
-
+        if (items.isEmpty()) {
+            System.out.println("The purchase list is empty");
+        }
     }
 
     public static void displayBalance() {
