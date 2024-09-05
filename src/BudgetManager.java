@@ -33,6 +33,8 @@ public class BudgetManager {
     }
 
     public static void addIncome() {
-
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter income:");
+        int income = sc.nextInt();
     }
 }
