@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class BudgetManager {
     private static float balance = 0;
+    private static float expenses = 0;
     private static ArrayList<String> items = new ArrayList<String>();
 
     public static void main(String[] args) {
@@ -56,6 +57,27 @@ public class BudgetManager {
 
         items.add(item.toString());
         System.out.println("Purchase was added!");
+    }
+
+    public static void showList() {
+        if (items.isEmpty()) {
+            System.out.println("The purchase list is empty");
+            return;
+        }
+
+        for (String item : items) {
+            System.out.println(item);
+        }
+
+        System.out.println("Total sum: $" + getTotalExpenses());
+    }
+
+    private static float getTotalExpenses() {
+        for (String item : items) {
+            expenses += Float.parseFloat(item.substring(item.lastIndexOf("$") + 1));
+        }
+
+        return expenses;
     }
 
     public static void displayBalance() {
